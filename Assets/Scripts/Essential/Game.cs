@@ -1,16 +1,26 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Game : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private Action whenSpaceClicked;
+    private Action whenRClicked;
 
-    // Update is called once per frame
+    void Awake()
+    {
+        whenSpaceClicked = GameMediator.GetInstance().GetWhenSpacePressed();
+        whenRClicked = GameMediator.GetInstance().GetWhenRPressed();
+    }
     void Update()
     {
-        
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            GameMediator.GetInstance().Notify(whenSpaceClicked);
+        }
+        if (Keyboard.current.rKey.wasPressedThisFrame)
+        {
+            GameMediator.GetInstance().Notify(whenRClicked);
+        }
     }
 }

@@ -4,8 +4,14 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MonsterMovement/EaseInQuadMovement")]
 public class EaseInQuadMovementSO : MonsterMovement.IObjectMovement
 {
-    public override void Move(GameObject monster)
+
+    public override float ReturnCalculatedPosition(float ratio)
     {
-        Debug.Log("Ease In Quad Move with ScriptableObject!");
+        return NumberFunction(ratio);
+    }
+
+    private float NumberFunction(float x)
+    {
+        return x * x;
     }
 }
