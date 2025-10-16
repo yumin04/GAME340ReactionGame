@@ -1,0 +1,96 @@
+{
+    "version": 1,
+    "name": "GameKeyBind",
+    "maps": [
+        {
+            "name": "EscKey",
+            "id": "9848d00f-2b43-4882-9b5f-50e67226f222",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "32594138-14db-40ba-99a2-c76549ac204a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c81164ec-14d2-4f10-b5fe-b7e84c28b6d9",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CheatKey",
+            "id": "2660d81c-d26d-44f8-9f6a-d9393539fb99",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a3791fac-f7f8-4b47-883b-4157bc7ba6d4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Two Modifiers",
+                    "id": "b1672019-a5f7-41a4-80fd-506df4e972b1",
+                    "path": "TwoModifiers",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier1",
+                    "id": "c471d594-90ac-4203-8587-751d7fe60094",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "modifier2",
+                    "id": "9fe25915-8c17-46be-ba54-be2cfc79a18b",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "a0444aff-d5e1-4d71-89da-8fcf9139ec3b",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
